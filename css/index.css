@@ -2,29 +2,159 @@
 :root{
     --accent-color:#e93578;
     --second-color:#fefb64;
-    font-family: 'Cairo', sans-serif;
 }
-body{
-    max-width:980px; ;
+.container{
+    max-width:980px;
     margin: auto;
     padding: 0;
-   }
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
 a{
     text-decoration: none;
-   }
+}
+/*------------- HEADER-------------*/
 .hat{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 header ul li {
-    display: inline-block;
+    display: inline;
 }
 header ul li a{
     list-style-type: none;
-    color: #e93578;
-    background:#fefb64;
-    padding: 3px 30px
-
+    color:var(--accent-color);
+    background:var(--second-color);
+    padding:3px 30px;
+}
+header ul li a:hover{
+    color:var(--second-color);
+    background-color:var(--accent-color);
+}
+#icon-phone{
+    position:relative;
+    left:100px;
 }
 #phone{
+    font-size: 14px;
+    color:var(--accent-color);
+}
+#phone:hover{
+    font-size: 15px;
+    color:#355723;
+}
+.name-company{
+    background-image: url(../img/first-background.jpg);
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 551px;
+    text-align: center;
+    flex-direction: column;
+}
+.name-company h1{
+    color:#0844a4;
+    text-transform: uppercase;
+    margin-bottom: 280px;
+}
+.name-company h1:hover{
+    color:var(--second-color);
+}
+.name-company h2{
+    color:#355723;
+    margin-bottom: 50px;
+}
+/*----------PRODUCT NAME-----------*/
+.heading{
+    text-align: center;
+    color:var(--accent-color);
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.column{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+}
+button{
+    width:110px;
+    height: 25px;
+    border-radius: 10px;
+    background-color:var(--second-color);
+    color:var(--accent-color);
+}
+button:hover{
+    color:var(--second-color);
+    background-color:var(--accent-color);
+}
+.product-name{
+    margin-bottom: 0;
+    padding: 0;
+    font-size:18px;
+}
+.price{
+    margin: 5px 0;
+    padding: 0;
+    font-size: 26px;
+}
+/*--------WRITE TO US-----------*/
+.write-to-us{
+    display: flex;
+    background-image:url(../img/contact.jpg);
+    background-position:center;
+    background-size: cover;
+    margin-top: 5px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.your-info{
+   height: 23px;
+   width: 631px;
+   margin-top: 35px;
+   border: 1px solid #ff3823;
+}
+.your-message{
+    height: 206px;
+    width: 631px;
+    margin-top: 45px;
+    border: 1px solid #ff3823;
+}
+::placeholder {
+  color:#0844a4;
+}
+.write-heading{
+    text-align: center;
+    color:var(--accent-color);
+    position: relative;
+    right:100px;
+    top:20px;
+}
+#send{
+    text-transform: uppercase;
+    width:218px;
+    height: 54px;
+    margin-top: 20px;
 
 }
+/*---------CONTACT LINKS------ */
+.contact-links{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.info-company{
+    color:var(--accent-color);
+    text-align: center;
+}
+
+

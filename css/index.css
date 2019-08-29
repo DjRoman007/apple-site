@@ -1,0 +1,30 @@
+@import url(<link href="https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap" rel="stylesheet">);
+:root{
+    --accent-color:#e93578;
+    --second-color:#fefb64;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    max-width:980px; ;
+    margin: auto;
+    padding: 0;
+   }
+a{
+    text-decoration: none;
+   }
+.hat{
+    display: flex;
+}
+header ul li {
+    display: inline-block;
+}
+header ul li a{
+    list-style-type: none;
+    color: #e93578;
+    background:#fefb64;
+    padding: 3px 30px
+
+}
+#phone{
+
+}

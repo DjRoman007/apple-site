@@ -90,7 +90,7 @@ header ul li a:hover{
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
 }
-button{
+.button{
     width:110px;
     height: 25px;
     border-radius: 10px;
@@ -105,14 +105,14 @@ button{
     grid-gap: 5px;
 }
 }
-button{
+.button{
     width:110px;
     height: 25px;
     border-radius: 10px;
     background-color:var(--second-color);
     color:var(--accent-color);
 }
-button:hover{
+.button:hover{
     color:var(--second-color);
     background-color:var(--accent-color);
 }
@@ -133,12 +133,12 @@ button:hover{
 /*--------WRITE TO US-----------*/
 .write-to-us{
     display: flex;
+    justify-content: center;
     background-image:url(../img/contact.jpg);
     background-position:center;
     background-size: cover;
     margin-top: 20px;
     height: 600px;
-    justify-content: center;
     align-items: center;
     flex-direction:column;
 }
@@ -154,6 +154,22 @@ button:hover{
     margin-top: 45px;
     border: 1px solid #ff3823;
 }
+#send{
+    text-transform: uppercase;
+    width:218px;
+    height: 54px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color:var(--second-color);
+    color:var(--accent-color);
+    position:relative;
+    left:26%;
+    bottom:40px;
+}
+#send:hover{
+    color:var(--second-color);
+    background-color:var(--accent-color);
+}
 @media(max-width:650px){
 .your-info{
    height: 23px;
@@ -167,7 +183,7 @@ button:hover{
 }
 #send{
     width:184px;
-    height:25px;
+    height:30px;
 }
 }
 ::placeholder {
@@ -180,12 +196,19 @@ button:hover{
     right:100px;
     top:20px;
 }
-#send{
-    text-transform: uppercase;
-    width:218px;
-    height: 54px;
-    margin-top: 20px;
+.info{
+    height: 28em;
+    position: relative }
 }
+.community{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
 /*---------CONTACT LINKS------ */
 .contact-links{
     max-width: 500px;

@@ -1,4 +1,4 @@
-@import url(<link href="https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap" rel="stylesheet">);
+@import url("https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap");
 :root{
     --accent-color:#e93578;
     --second-color:#fefb64;
@@ -72,6 +72,7 @@ header ul li a:hover{
 .heading{
     text-align: center;
     color:var(--accent-color);
+    margin: 10px 0px;
 }
 .row{
     display: flex;
@@ -82,6 +83,27 @@ header ul li a:hover{
     justify-content: center;
     flex-direction:column;
     align-items: center;
+}
+@media (max-width: 900px){
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+button{
+    width:110px;
+    height: 25px;
+    border-radius: 10px;
+    background-color:var(--second-color);
+    color:var(--accent-color);
+}
+}
+@media (max-width: 620px){
+.row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
 }
 button{
     width:110px;
@@ -95,12 +117,16 @@ button:hover{
     background-color:var(--accent-color);
 }
 .product-name{
+    margin-top: 10px;
     margin-bottom: 0;
     padding: 0;
     font-size:18px;
 }
+.icon-product{
+    margin: 0;
+}
 .price{
-    margin: 5px 0;
+    margin: 0;
     padding: 0;
     font-size: 26px;
 }
@@ -110,7 +136,7 @@ button:hover{
     background-image:url(../img/contact.jpg);
     background-position:center;
     background-size: cover;
-    margin-top: 5px;
+    margin-top: 20px;
     height: 600px;
     justify-content: center;
     align-items: center;
@@ -128,6 +154,22 @@ button:hover{
     margin-top: 45px;
     border: 1px solid #ff3823;
 }
+@media(max-width:650px){
+.your-info{
+   height: 23px;
+   width: 350px;
+   margin-top: 30px;
+}
+.your-message{
+    height: 206px;
+    width: 350px;
+    margin-top: 30px;
+}
+#send{
+    width:184px;
+    height:25px;
+}
+}
 ::placeholder {
   color:#0844a4;
 }
@@ -143,18 +185,19 @@ button:hover{
     width:218px;
     height: 54px;
     margin-top: 20px;
-
 }
 /*---------CONTACT LINKS------ */
 .contact-links{
     max-width: 500px;
     margin: auto;
+    margin-top:5px;
     display: flex;
     justify-content: space-around;
 }
 .info-company{
     color:var(--accent-color);
     text-align: center;
+    margin: 0;
 }
 
 

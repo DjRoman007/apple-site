@@ -38,6 +38,7 @@ header ul li a:hover{
     left:100px;
 }
 #phone{
+    width:110px;
     font-size: 14px;
     color:var(--accent-color);
 }
@@ -186,6 +187,22 @@ header ul li a:hover{
     height:30px;
 }
 }
+@media(max-width:375px){
+.your-info{
+   height: 23px;
+   width: 290px;
+   margin-top: 30px;
+}
+.your-message{
+    height: 206px;
+    width: 290px;
+    margin-top: 30px;
+}
+#send{
+    width:184px;
+    height:30px;
+}
+}
 ::placeholder {
   color:#0844a4;
 }
@@ -193,7 +210,7 @@ header ul li a:hover{
     text-align: center;
     color:var(--accent-color);
     position: relative;
-    right:100px;
+    right:80px;
     top:20px;
 }
 .info{

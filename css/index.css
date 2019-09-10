@@ -7,14 +7,22 @@
     max-width:980px;
     margin: auto;
     padding: 0;
+
 }
 body{
     font-family: 'Cairo', sans-serif;
+    background-image: url(../img/background.jpg);
+    background-position:center;
+    background-size: cover;
 }
 a{
     text-decoration: none;
 }
 /*------------- HEADER-------------*/
+.clock{
+    position: fixed;
+    color:var(--accent-color);
+}
 .hat{
     display: flex;
     align-items: center;
@@ -36,6 +44,7 @@ header ul li a:hover{
 #icon-phone{
     position:relative;
     left:100px;
+    width:35px;
 }
 #phone{
     width:110px;
@@ -44,7 +53,7 @@ header ul li a:hover{
 }
 #phone:hover{
     font-size: 15px;
-    color:#355723;
+    color:var(--second-color);
 }
 .name-company{
     background-image: url(../img/first-background.jpg);

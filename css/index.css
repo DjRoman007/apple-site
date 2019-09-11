@@ -28,6 +28,21 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+@media (max-width: 900px) {
+    #icon-phone{
+        display: none;
+    }
+}
+@media (max-width: 675px) {
+    #phone{
+        display: none;
+    }
+}
+@media (max-width: 520px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+}
 header ul li {
     display: inline;
 }
@@ -136,6 +151,7 @@ header ul li a:hover{
     margin: 0;
 }
 .price{
+    color:red;
     margin: 0;
     padding: 0;
     font-size: 26px;
@@ -172,67 +188,54 @@ header ul li a:hover{
     border-radius: 10px;
     background-color:var(--second-color);
     color:var(--accent-color);
-    position:relative;
-    left:26%;
-    bottom:40px;
 }
 #send:hover{
     color:var(--second-color);
     background-color:var(--accent-color);
 }
-@media(max-width:650px){
-.your-info{
-   height: 23px;
-   width: 350px;
-   margin-top: 30px;
-}
-.your-message{
-    height: 206px;
+@media(max-width:650px) {
+    .your-info{
+    height: 23px;
     width: 350px;
     margin-top: 30px;
+    }
+    .your-message {
+        height: 206px;
+        width: 350px;
+        margin-top: 30px;
+    }
+    #send {
+        width:184px;
+        height:30px;
+    }
 }
-#send{
-    width:184px;
-    height:30px;
-}
-}
-@media(max-width:375px){
-.your-info{
-   height: 23px;
-   width: 290px;
-   margin-top: 30px;
-}
-.your-message{
-    height: 206px;
-    width: 290px;
-    margin-top: 30px;
-}
-#send{
-    width:184px;
-    height:30px;
-}
+@media(max-width:375px) {
+    .your-info{
+        height: 23px;
+        width: 290px;
+        margin-top: 30px;
+    }
+    .your-message {
+        height: 206px;
+        width: 290px;
+        margin-top: 30px;
+    }
+    #send{
+        width:184px;
+        height:30px;
+    }
 }
 ::placeholder {
   color:#0844a4;
 }
-.write-heading{
-    text-align: center;
+.write-heading {
     color:var(--accent-color);
-    position: relative;
-    right:80px;
-    top:20px;
+    margin-bottom: 0;
 }
-.info{
-    height: 28em;
-    position: relative }
-}
+
 .community{
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+    text-align: center;
 }
 
 /*---------CONTACT LINKS------ */

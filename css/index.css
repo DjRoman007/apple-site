@@ -11,9 +11,6 @@
 }
 body{
     font-family: 'Cairo', sans-serif;
-    background-image: url(../img/background.jpg);
-    background-position:center;
-    background-size: cover;
 }
 a{
     text-decoration: none;
@@ -21,45 +18,32 @@ a{
 /*------------- HEADER-------------*/
 .clock{
     position: fixed;
-    color:#ffffff;
+    color:#000000;
 }
-.hat{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#logo{
+    width:51px;
+    height: 51px;
 }
-@media (max-width: 900px) {
-    #icon-phone{
-        display: none;
-    }
+.motto{
+    font-size: 24px;
+    color: #355723;
+    margin-bottom: 50px;
 }
-@media (max-width: 675px) {
-    #phone{
-        display: none;
-    }
-}
-@media (max-width: 520px) {
-    .menu {
-        flex-wrap: wrap;
-    }
-}
-header ul li {
-    display: inline;
-}
-header ul li a{
+.nav-link{
     list-style-type: none;
-    color:var(--accent-color);
+    color:#e93578;
     background:var(--second-color);
     padding:3px 30px;
-}
-header ul li a:hover{
+    }
+.nav-link:hover{
     color:var(--second-color);
     background-color:var(--accent-color);
 }
 #icon-phone{
     position:relative;
-    left:100px;
-    width:35px;
+    right:20px;
+    width:43px;
+    height:43px;
 }
 #phone{
     width:110px;
@@ -68,7 +52,8 @@ header ul li a:hover{
 }
 #phone:hover{
     font-size: 15px;
-    color:var(--second-color);
+    color:red;
+    text-decoration: none;
 }
 .name-company{
     background-image: url(../img/first-background.jpg);
@@ -85,19 +70,16 @@ header ul li a:hover{
     color:#0844a4;
     text-transform: uppercase;
     margin-bottom: 280px;
+    font-weight: bold;
 }
 .name-company h1:hover{
     color:var(--second-color);
-}
-.name-company h2{
-    color:#355723;
-    margin-bottom: 50px;
 }
 /*----------PRODUCT NAME-----------*/
 .heading{
     text-align: center;
     color:var(--accent-color);
-    margin: 10px 0px;
+    padding: 10px 10px;
 }
 .row{
     display: flex;
@@ -108,6 +90,7 @@ header ul li a:hover{
     justify-content: center;
     flex-direction:column;
     align-items: center;
+    margin-bottom: 2 2;
 }
 @media (max-width: 900px){
     .row {
@@ -123,6 +106,15 @@ header ul li a:hover{
         color:var(--accent-color);
     }
 }
+@media(max-width:1000px){
+    #icon-phone{
+        display: none;
+    }
+    #phone{
+        display: none;
+    }
+}
+
 @media (max-width: 620px) {
     .row {
         display: grid;
@@ -133,22 +125,44 @@ header ul li a:hover{
 .button{
     width:110px;
     height: 25px;
-    border-radius: 10px;
+    text-transform: uppercase;
+    border-radius: 5px;
     background-color:var(--second-color);
     color:var(--accent-color);
+    margin-bottom: 5px;
+
 }
 .button:hover{
     color:var(--second-color);
     background-color:var(--accent-color);
 }
+.column:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition-delay: 0.25s;
+}
 .product-name{
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     padding: 0;
     font-size:18px;
 }
-.icon-product{
-    margin: 0;
+.icon-product-iphone{
+    margin: 4px 4px;
+    border-radius: 10px;
+    width: 141px;
+    height: 210px;
+}
+.icon-product-ipad{
+    margin: 4px 4px;
+    width: 229px;
+    height: 263px;
+}
+.icon-product-watch{
+    margin: 4px 4px;
+    width: 162px;
+    height: 162px;
 }
 .price{
     color:red;

@@ -25,16 +25,48 @@ a{
     height: 51px;
 }
 .motto{
+    position: absolute;
+    bottom:10%;
+    left:42%;
     font-size: 24px;
     color: #355723;
-    margin-bottom: 50px;
 }
 .nav-link{
     list-style-type: none;
     color:#e93578;
     background:var(--second-color);
     padding:3px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
     }
+.d-block{
+    width:980px;
+    height:551px;
+}
+@media(max-width:350px){
+    .d-block{
+        width:320px;
+        height:200px;
+    }
+    .name-company{
+        font-size: 18px;
+    }
+    .motto{
+        font-size: 14px;
+    }
+}
+@media(max-width:600px){
+    .d-block{
+        width:600px;
+        height:350px;
+    }
+    .name-company{
+        font-size: 20px;
+    }
+    .motto{
+        font-size: 18px;
+    }
+}
 .nav-link:hover{
     color:var(--second-color);
     background-color:var(--accent-color);
@@ -56,24 +88,19 @@ a{
     text-decoration: none;
 }
 .name-company{
-    background-image: url(../img/first-background.jpg);
-    background-position:center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 551px;
-    text-align: center;
-    flex-direction: column;
-}
-.name-company h1{
+    position:absolute;
+    top: 15%;
+    left:38%;
     color:#0844a4;
     text-transform: uppercase;
     margin-bottom: 280px;
     font-weight: bold;
 }
-.name-company h1:hover{
+.name-company:hover{
     color:var(--second-color);
+}
+#productsCarousel{
+    position: relative;
 }
 /*----------PRODUCT NAME-----------*/
 .heading{

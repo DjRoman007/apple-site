@@ -31,12 +31,6 @@ a{
     font-size: 24px;
     color: #355723;
 }
-#navbarNav{
-    display: flex;
-    justify-content: center;
-    color:var(--accent-color);
-
-}
 .nav-link{
     list-style-type: none;
     color:#e93578;

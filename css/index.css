@@ -133,7 +133,12 @@ a{
         color:var(--accent-color);
     }
 }
-@media(max-width:1000px){
+@media (max-width: 580px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
     #icon-phone{
         display: none;
     }
@@ -142,13 +147,6 @@ a{
     }
 }
 
-@media (max-width: 620px) {
-    .row {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 5px;
-    }
-}
 .button{
     width:110px;
     height: 25px;
@@ -157,7 +155,6 @@ a{
     background-color:var(--second-color);
     color:var(--accent-color);
     margin-bottom: 5px;
-
 }
 .button:hover{
     color:var(--second-color);
@@ -165,7 +162,7 @@ a{
 }
 .column:hover{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition-delay: 0.25s;
+    transition-delay: 0.15s;
 }
 .product-name{
     margin-top: 10px;

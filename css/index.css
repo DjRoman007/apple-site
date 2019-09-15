@@ -11,6 +11,7 @@
 }
 body{
     font-family: 'Cairo', sans-serif;
+
 }
 a{
     text-decoration: none;
@@ -39,21 +40,23 @@ a{
     font-size: 14px;
     text-transform: uppercase;
 }
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:var(--accent-color);
+}
 .navbar-light .navbar-nav .nav-link{
     color:var(--accent-color);
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color:var(--second-color);
 }
-.d-block{
-    width:980px;
-    height:551px;
+.navbar-nav{
+    margin: auto;
+    float:right;
+    width:50%;
+    text-align: center;
 }
 @media(max-width:350px){
-    .d-block{
-        width:320px;
-        height:200px;
-    }
+
     .name-company{
         font-size: 18px;
     }
@@ -62,16 +65,17 @@ a{
     }
 }
 @media(max-width:600px){
-    .d-block{
-        width:600px;
-        height:350px;
-    }
+
     .name-company{
         font-size: 20px;
     }
     .motto{
         font-size: 18px;
     }
+}
+.show>.nav-link{
+    color:var(--accent-color);
+    margin-left: 15px;
 }
 .nav-link:hover{
     color:var(--second-color);
@@ -123,8 +127,15 @@ a{
     justify-content: center;
     flex-direction:column;
     align-items: center;
-    margin-bottom: 2 2;
+    margin-bottom: 2px;
 }
+.icon-product-iphone{
+    border-radius: 15px;
+}
+.icon-product-ipad{
+    border-radius: 15px;
+}
+
 @media (max-width: 900px){
     .row {
         display: grid;
@@ -178,24 +189,9 @@ a{
     padding: 0;
     font-size:18px;
 }
-.icon-product-iphone{
-    margin: 4px 4px;
-    border-radius: 10px;
-    width: 141px;
-    height: 210px;
-}
-.icon-product-ipad{
-    margin: 4px 4px;
-    width: 229px;
-    height: 263px;
-}
-.icon-product-watch{
-    margin: 4px 4px;
-    width: 162px;
-    height: 162px;
-}
+
 .price{
-    color:red;
+    color:#FF0000;
     margin: 0;
     padding: 0;
     font-size: 26px;
